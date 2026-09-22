@@ -1,6 +1,6 @@
 # Google Search Slop Blocker
 
-Google Search AI slop blocker for [uBlock Origin(uBO)](https://github.com/gorhill/ublock) and [uBlock Origin Lite(uBOL)](https://github.com/uBlockOrigin/uBOL-home).
+[uBlock Origin(uBO)](https://github.com/gorhill/ublock) and [uBlock Origin Lite(uBOL)](https://github.com/uBlockOrigin/uBOL-home) filter for blocking _so-called-AI_ features in Google Search.
 
 ![example of slop](.screenshots/ai-overview-slop.png)
 
@@ -13,27 +13,32 @@ _Example of the slop_
 ### It blocks...
 
 - "AI Overview" (Both `full` and `lite` versions)
-- "People also ask", "People also search for" (`full` version only)
+- "People also ask" and "People also search for" (`full` version only)
 - "AI Mode" tab (`full` version only)
 
 ### It does not block...
 
-- Slop in the search results that is all over the place
+- Slop in the actual search results that is all over the place
 
 ## How to use
 
 Add the following filter to your uBO/uBOL filter list:
 
+**Full version**
+
 ```
-# Full version
 https://raw.githubusercontent.com/SalaryTheft/gssb/master/dist/gssb-full.txt
-# Lite version
+```
+
+**Lite version**
+
+```
 https://raw.githubusercontent.com/SalaryTheft/gssb/master/dist/gssb-lite.txt
 ```
 
 ### Custom DNR Rule for iOS Safari
 
-By limitation of iOS Safari, uBOL cannot block XMLHttpRequest(XHR) by default. Adding a filter only hides the DOM element, but the XHR request is still sent and waste bandwidth (and energy for both your device and the server).
+By limitation of iOS Safari, uBOL cannot block XMLHttpRequest(XHR) by default. Adding a filter only hides the DOM element, but the XHR request is still sent and wastes bandwidth (and energy for both your device and the server).
 
 To completely block the request, you need to add a custom DNR rule in uBOL.
 

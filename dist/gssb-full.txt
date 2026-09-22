@@ -1,9 +1,9 @@
 ! Title: Google Search Slop Blocker (Full)
-! Description: Blocks "AI Overview" and other LLM generated content from Google Search.
+! Description: Blocks "AI Overview" and other LLM-powered features from Google Search.
 ! Homepage: https://github.com/SalaryTheft/gssb
 ! License: MIT
 ! Expires: 1 day
-! Last modified: 2026-09-21
+! Last modified: 2026-09-22
 
 ! AI Overview XHR
 ://www.google.com/async/folsrch?*$xhr
