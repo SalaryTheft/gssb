@@ -3,11 +3,12 @@
 ! Homepage: https://github.com/SalaryTheft/gssb
 ! License: MIT
 ! Expires: 1 day
-! Last modified: 2026-09-22
+! Last modified: 2026-10-01
 
 ! AI Overview XHR
 ://www.google.com/async/folsrch?*$xhr
 ! AI Overview
 google.com/search##div[data-cb-scope]
-! AI Overview (uBOL for Safari)
+google.com/search##div[data-aquarium]
 google.com##:matches-path(/^\/search(?:\?|$)/) div[data-cb-scope]
+google.com##:matches-path(/^\/search(?:\?|$)/) div[data-aquarium]
